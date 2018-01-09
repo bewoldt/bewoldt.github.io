@@ -98,7 +98,7 @@ a {
     color: darken($brand-color, 15%);
   }
 
-  &:hover {
+  &:hover, &:focus {
     color: $text-color;
     text-decoration: underline;
   }
@@ -212,4 +212,12 @@ pre {
   li + li {
     padding-top: 5px;
   }
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
