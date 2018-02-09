@@ -4,7 +4,7 @@ title:  "Flexbox Align-Items"
 date:   2018-2-9
 categories:
 ---
-The align-items property defines how the browser distributes space between and around flex items along the cross-axis of their container. Justify-content aligns items along the horizontal axis, align-items aligns items on the vertical axis.
+The align-items property defines how the browser distributes space between and around flex items along the vertical axis of their container. Justify-content aligns items along the horizontal axis, align-items aligns items on the vertical axis.
 
 **flex-start**: Items are positioned at the beginning of the container.
 
@@ -12,7 +12,7 @@ The align-items property defines how the browser distributes space between and a
 
 **center**: Items are positioned at the center of the container.
 
-**stretch**: Items are stretched to fit the container.
+**stretch**: Default. Items are stretched to fit the container.
 
 **baseline**: Items are aligned such as their baselines align.
 
