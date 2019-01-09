@@ -21,7 +21,7 @@ body {
 	background: #164a7d;
 	color: rgba(255,255,255,.85);
 	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lora', serif;
 	line-height: 1.6;
 	/*animation: myanimation 60s infinite;*/
 	-webkit-font-smoothing: antialiased;
@@ -79,6 +79,7 @@ ol {
 }
 .year {
 	font-size: 15px;
+	font-family: 'Lato', sans-serif;
 	margin-bottom: 2em;
 }
 .list li {
