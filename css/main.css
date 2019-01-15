@@ -63,6 +63,15 @@ ul {
 ol {
 	list-style-type: decimal;
 }
+ul, ol, p, blockquote {
+	margin-bottom: 1em;
+}
+a {
+	color: rgba(255,255,255,.85);
+}
+a:hover, a:focus {
+	color: #fff;
+}
 .divider {
 	border-bottom: 3px solid rgba(255,255,255,.5);
 	width: 40px;
@@ -77,14 +86,15 @@ ol {
 	max-width: 800px;
 	padding: 160px 1em;
 }
-.year {
+dl {
+
+}
+dd {
 	font-size: 15px;
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 2em;
 }
-.list li {
-	margin-bottom: .5em;
-}
+
 @media (min-width: 600px) {
 	body {
 		font-size: 20px;
