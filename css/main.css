@@ -80,7 +80,7 @@ a:hover, a:focus {
 }
 .container {
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 750px;
 	padding: 160px 1em;
 }
 dd {
