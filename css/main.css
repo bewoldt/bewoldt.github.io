@@ -84,6 +84,12 @@ a:focus {
 img {
   max-width: 100%;
 }
+figure {
+  margin-bottom: 10px;
+}
+figure img {
+  display: block;
+}
 figcaption {
   font-size: 15px;
 }
