@@ -84,10 +84,13 @@ a:focus {
 img {
   max-width: 100%;
 }
+figcaption {
+  font-size: 15px;
+}
 .divider {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  width: 40px;
-  margin: 4em 0;
+  width: 10%;
+  margin: 5vw 0;
 }
 .lede {
   font-size: 18px;
@@ -95,7 +98,7 @@ img {
 .container {
   margin: 0 auto;
   max-width: 800px;
-  padding: 160px 1em;
+  padding: 9vw 1em;
 }
 dd {
   font-size: 15px;
