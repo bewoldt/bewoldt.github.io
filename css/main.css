@@ -1,10 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,900);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
-
 :root {
-  --bg-color: #115d6b;
-  --font-serif: "Lora", serif;
-  --font-sans: "Lato", sans-serif;
+  --bg-color: #fff;
+  --text-color: #111;
+  --link-color: #0064ff;
+  --font-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  --font-sans: system-ui, sans-serif;
+  --body-font-size: 1.2rem;
+  --body-line-height: 1.6;
 }
 
 * {
@@ -25,10 +26,11 @@ html {
 }
 body {
   background-color: var(--bg-color);
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 18px;
-  font-family: var(--font-serif);
-  line-height: 1.6;
+  color: var(--text-color);
+  font-size: var(--body-font-size);
+  font-family: var(--font-sans);
+  font-weight: normal;
+  line-height: var(--body-line-height);
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -41,9 +43,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: white;
-  font-family: var(--font-sans);
-  font-weight: 900;
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0.5em;
 }
@@ -75,11 +75,7 @@ dl {
   margin-bottom: 1em;
 }
 a {
-  color: rgba(255, 255, 255, 0.85);
-}
-a:hover,
-a:focus {
-  color: #fff;
+  color: var(--link-color);
 }
 img {
   max-width: 100%;
@@ -95,9 +91,9 @@ figcaption {
   font-size: 16px;
 }
 .divider {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid #111;
   width: 10%;
-  margin: 5vw 0;
+  margin: 3rem 0;
 }
 .lede {
   font-size: 18px;
@@ -105,26 +101,19 @@ figcaption {
 .container {
   margin: 0 auto;
   max-width: 800px;
-  padding: 9vw 1em;
+  padding: 2rem 1em;
 }
 dd {
   font-size: 15px;
   font-family: var(--font-sans);
   margin-bottom: 2em;
 }
-.drop-cap::first-letter {
-  float: left;
-  line-height: 1;
-  font-size: 70px;
-  padding: 0 0.15em 0 0;
-  text-transform: uppercase;
-}
 
 summary {
   cursor: pointer;
 }
 summary:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.05);
 }
 details {
   border: 1px solid #aaa;
@@ -149,16 +138,35 @@ details[open] summary {
 }
 
 @media (min-width: 600px) {
-  body {
-    font-size: 20px;
-  }
-  h1 {
+  h1.title {
     font-size: 78px;
+    margin-top: 0;
   }
   h2 {
     font-size: 36px;
   }
   .lede {
     font-size: 22px;
+  }
+}
+
+/* Header */
+.header-nav {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  display: flex;
+  border-top: 3px solid #111;
+  border-bottom: 1px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  & li {
+    margin-right: 1rem;
+    & a {
+      color: var(--text-color);
+      font-size: 1rem;
+      text-decoration: none;
+    }
   }
 }
