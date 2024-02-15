@@ -171,11 +171,6 @@ details[open] summary {
   }
 }
 
-pre {
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
+pre code {
   border-radius: 5px;
-  font-size: 1rem;
-  display: block;
-  padding: 1rem;
 }
