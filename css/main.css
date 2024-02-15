@@ -1,6 +1,6 @@
 :root {
   --bg-color: #fff;
-  --text-color: #111;
+  --text-color: #222;
   --link-color: #0064ff;
   --font-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
   --font-sans: system-ui, sans-serif;
@@ -169,4 +169,13 @@ details[open] summary {
       text-decoration: none;
     }
   }
+}
+
+pre {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: block;
+  padding: 1rem;
 }
