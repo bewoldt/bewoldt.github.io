@@ -171,6 +171,13 @@ details[open] summary {
   }
 }
 
-pre code {
+pre {
+  background: #eee;
   border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+code {
+  background: #eee;
 }
