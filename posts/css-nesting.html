@@ -13,15 +13,15 @@
       <ul class="header-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/posts/index.html">Posts</a></li>
-        <!-- <li><a href="resume.html">Resume</a></li> -->
+        <li><a href="../links.html">Links</a></li>
         <li><a href="../bucketlist.html">Bucket List</a></li>
       </ul>
       <h1 class="test">CSS Nesting is Here</h1>
 
       <p>
-        Native CSS nesting in the browser is finally available in most browsers.
-        I've been using CSS nesting for years but it's always been used with
-        SCSS so it's nice to finally have it integrated. So, why use nesting?
+        Native CSS nesting in the browser is finally available in most browsers. I've been using CSS
+        nesting for years but it's always been used with SCSS so it's nice to finally have it
+        integrated. So, why use nesting?
       </p>
       <ul>
         <li>Easier to read</li>
@@ -30,8 +30,8 @@
       </ul>
       <h3>Versions - Strict vs Relaxed</h3>
       <p>
-        Currently there are two versions when using nesting: Strict and Relaxed.
-        The difference being that the strict version requires the
+        Currently there are two versions when using nesting: Strict and Relaxed. The difference
+        being that the strict version requires the
         <code class="language-css">&</code> symbol before the selector.
       </p>
       <p><strong>Nesting using Strict mode</strong></p>
@@ -41,9 +41,8 @@
   }
 }</code></pre>
       <p>
-        <strong>Nesting using Relaxed mode</strong> (without the nesting
-        modifier). If the nesting selector doesn't have an &, it gets one added
-        in front of it implicitly.
+        <strong>Nesting using Relaxed mode</strong> (without the nesting modifier). If the nesting
+        selector doesn't have an &, it gets one added in front of it implicitly.
       </p>
       <pre><code class="language-css">.card {
   .title {
@@ -52,21 +51,17 @@
 }</code></pre>
       <h3>Compound selectors</h3>
       <p>
-        If you need the rule to be attached without whitespace, the nesting
-        selector must be immediately prepended with an &.
+        If you need the rule to be attached without whitespace, the nesting selector must be
+        immediately prepended with an &.
       </p>
       <pre><code class="language-css">.parent-rule {
   &:hover {
 
   }
 }</code></pre>
-      <p>
-        This is equal to <code class="language-css">.parent-rule:hover {}</code>
-      </p>
+      <p>This is equal to <code class="language-css">.parent-rule:hover {}</code></p>
       <h3>Appending</h3>
-      <p>
-        The nesting selector can be appended at the end to reverse the order.
-      </p>
+      <p>The nesting selector can be appended at the end to reverse the order.</p>
       <pre><code class="language-css">.parent-rule {
   .child-rule & {
 
@@ -86,8 +81,8 @@
       </p>
       <h3>What doesn't work?</h3>
       <p>
-        Using BEM style concatenation won't work with the version 1 of CSS
-        nesting. Maybe in later versions this will get added.
+        Using BEM style concatenation won't work with the version 1 of CSS nesting. Maybe in later
+        versions this will get added.
       </p>
       <pre><code class="language-css">.card {
   &--header {
@@ -96,10 +91,7 @@
 }</code></pre>
       <p>This won't work</p>
       <h3>Warnings</h3>
-      <p>
-        Make sure to put all parent declarations before the nested styles, not
-        after.
-      </p>
+      <p>Make sure to put all parent declarations before the nested styles, not after.</p>
       <pre><code class="language-css">.card {
   color: red; /* place parent styles above any nested elements */
   & .section {
