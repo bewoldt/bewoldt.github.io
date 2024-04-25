@@ -163,7 +163,8 @@ details[open] summary {
   padding-bottom: 1rem;
   & li {
     margin-right: 1rem;
-    & a {
+    & a,
+    & span {
       color: var(--text-color);
       font-size: 1rem;
       text-decoration: none;
