@@ -121,6 +121,8 @@ details {
   border-radius: 4px;
   padding: 0.6em 0.6em 0;
   margin-bottom: 10px;
+  & img {
+    border-radius: 4px;
 }
 
 summary {
