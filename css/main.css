@@ -194,11 +194,10 @@ hr {
 }
 
 .reading-heading {
-
 }
 .reading-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1em;
 }
 .reading-item {
@@ -207,21 +206,35 @@ hr {
   border-radius: 4px;
   padding: 1em;
   text-align: center;
+}
+.reading-img {
+  padding: 10px 40px;
   & img {
     border-radius: 4px;
     display: block;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.1px 1.5px,
+      rgba(0, 0, 0, 0.1) 0px 2.8px 3.9px, rgba(0, 0, 0, 0.08) 0px 5.8px 7.9px,
+      rgba(0, 0, 0, 0.06) 0px 12.0455px 16.4px,
+      rgba(0, 0, 0, 0.04) 0px 33px 45px;
   }
 }
 .reading-author {
- & h3 {
-  margin-bottom: 0;
-  margin-top: 1em;
-  font-size: 18px;
- }
+  text-align: center;
+  & h3 {
+    margin-bottom: 5px;
+    margin-top: 1em;
+    font-size: 16px;
+    font-weight: normal;
+  }
   & p {
     margin: 0;
     font-size: 14px;
     color: #666;
     font-style: italic;
+  }
+}
+.rating {
+  & img {
+    width: 40%;
   }
 }
