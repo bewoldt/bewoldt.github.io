@@ -124,12 +124,27 @@ details {
   & img {
     border-radius: 4px;
   }
+  & a img {
+    transition: opacity 0.2s ease;
+  }
+  & a:hover img {
+    opacity: 0.85;
+  }
 }
 
 summary {
   font-weight: bold;
   margin: -0.6em -0.6em 0;
   padding: 0.6em;
+  display: flex;
+  align-items: center;
+}
+
+.summary-year {
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
 }
 
 details[open] {
